@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body{
+  font-family: 'Kanit', sans-serif;
+}
+
+.App {
+  width: 100vw; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #DEF4FF;
+  transition: 0.5s all;
+}
+
+.ContainerCal{
+  width: 250px;
+  height: 550px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+  /* background-color: #171717; */
+  /* background-color: #1F1D36; */
+  box-shadow: 0 50px 100px 0 #4e7a9197;
+  transition: all 0.5s;
+}
+
+.Section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: thin dotted #f00; */
+}
+
+.Mode{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: thin dotted #f00; */
+}
+
+.SubMode{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border-radius: 10px;
+  color: rgb(153, 153, 153);
+  background-color: #393E4610;
+  box-shadow: inset -7px 7px 14px #2d323810,
+              inset 7px -7px 14px #393E4610;
+  border: none;
+  transition: 0.5s all;
+}
+
+.BtnMode{
+  color: #b9b9b9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all;
+}
+
+.Operations{
+  width: 100%;
+  height: 50px;
+}
+
+.Screen{
+  width: 100%;
+  height: 100px;
+}
+
+.Numbers{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Number, .Number3, .Number4{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: rgb(153, 153, 153);
+  background: #f5f5f5;
+  box-shadow: inset -7px 7px 14px #f6f6f6,
+              inset 7px -7px 14px #cacaca60;
+  transition: 0.5s all;
+}
+
+.Number2{
+  width: 110px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: rgb(153, 153, 153);
+  box-shadow: inset -7px 7px 14px #f6f6f6,
+              inset 7px -7px 14px #cacaca60;
+  transition: 0.5s all;
+}
+
+.Number:hover, .Number2:hover{
+  color: #F05454;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  box-shadow: inset -7px 7px 14px #cacaca60,
+  inset 7px -7px 14px #f6f6f6,
+  0 3px 10px 0 #cccccc50;
+}
+
+.Number3{
+  color: #FFF;
+  background-color: #F05454;
+  box-shadow: inset -7px 7px 14px #F05454,
+  inset 7px -7px 14px #c22d2d;
+}
+
+.Number3:hover, .BtnMode:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #F05454;
+  box-shadow: inset -7px 7px 14px #c22d2d,
+  inset 7px -7px 14px #F05454,
+  0 3px 10px 0 #cccccc;
+}
+
+.Number4{
+  color: rgb(153, 153, 153);
+  background-color: #393E4610;
+  box-shadow: inset -7px 7px 14px #2d323810,
+  inset 7px -7px 14px #393E4610;
+}
+
+.Number4:hover{
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+  background-color: #393E4620;
+  box-shadow: inset -7px 7px 14px #393E4620,
+  inset 7px -7px 14px #2d323820,
+  0 3px 10px 0 #cccccc50;
+}
+
+
+
+/******************** DARK MODE ********************************/
+
+.DarkMode{
+  background-color: #151515;
+  color: white;
+  box-shadow: 0 50px 100px 0 #423F3E;
+}
+
+.AppDarkMode{
+  background-color: #2B2B2B;
+}
+
+.DarkModeNumber{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  background: #969696;
+  box-shadow: inset -7px 7px 14px #969696,
+              inset 7px -7px 14px #cacaca;
+  transition: 0.5s all;
+}
+
+.DarkModeNumber2{
+  width: 110px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #969696;
+  color: rgb(255, 255, 255);
+  box-shadow: inset -7px 7px 14px #969696,
+  inset 7px -7px 14px #cacaca;  
+  transition: 0.5s all;
+}
+
+.DarkModeNumber4{
+  background-color: #36393b;
+  box-shadow: inset -7px 7px 14px #202224,
+  inset 7px -7px 14px #36393b;
+}
+
+.DarkModeNumber4:hover{
+  background-color: #36393b;
+  box-shadow: inset -7px 7px 14px #36393b,
+              inset 7px -7px 14px #202224;
+}
